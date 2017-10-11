@@ -22,17 +22,20 @@
                                 <rect key="frame" x="139" y="285" width="96" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="powerButton"/>
+                                <connections>
+                                    <action selector="launchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LEv-Aa-1KY"/>
+                                </connections>
                             </button>
                             <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kBQ-gf-VXQ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clouds" translatesAutoresizingMaskIntoConstraints="NO" id="3Nr-ja-3fI">
-                                        <rect key="frame" x="0.0" y="263" width="375" height="404"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rocketWithStream" translatesAutoresizingMaskIntoConstraints="NO" id="KQ1-c3-Yak">
+                                        <rect key="frame" x="0.0" y="500" width="375" height="579"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rocketWithStream" translatesAutoresizingMaskIntoConstraints="NO" id="KQ1-c3-Yak">
-                                        <rect key="frame" x="0.0" y="88" width="375" height="579"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clouds" translatesAutoresizingMaskIntoConstraints="NO" id="3Nr-ja-3fI">
+                                        <rect key="frame" x="0.0" y="263" width="375" height="404"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Launch mode:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SsW-bW-XaT">
@@ -56,6 +59,13 @@
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="cloudsImage" destination="3Nr-ja-3fI" id="Zf2-fD-Z8M"/>
+                        <outlet property="launchModeLabel" destination="SsW-bW-XaT" id="JCu-Pd-E7g"/>
+                        <outlet property="launchModeView" destination="kBQ-gf-VXQ" id="Fs1-6N-LnI"/>
+                        <outlet property="onLabel" destination="Hkc-xw-jyO" id="trB-uc-zIL"/>
+                        <outlet property="rocketWithStreamImage" destination="KQ1-c3-Yak" id="QLe-t3-rwM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
